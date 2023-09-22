@@ -4,7 +4,7 @@ import NextLink from "next/link";
 
 export default function Header() {
   return (
-    <Box as={"header"} color={"black"} bgColor={"#aaaaaa"}>
+    <Box as={"header"} color={"header.text"} bgColor={"header.bg"}>
       <Container maxW="container.lg">
         <HStack h={14}>
           <Heading as="h1" fontSize="2xl" cursor="pointer">
@@ -13,7 +13,7 @@ export default function Header() {
             </Link>
           </Heading>
           <Spacer />
-          <Link as={NextLink} href={REPOSITORY_URL} _hover={{ color: "green.900" }}>
+          <Link as={NextLink} href={REPOSITORY_URL} _hover={{ color: "header.hover" }}>
             GitHub
           </Link>
         </HStack>
