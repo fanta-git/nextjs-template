@@ -1,3 +1,5 @@
+import DefaultWrapper from "@/compornents/DefaultWrapper";
+import Header from "@/compornents/Header";
 import { Providers } from "./providers";
 
 type Props = {
@@ -11,7 +13,10 @@ export default function RootLayout(props: Props) {
     <html lang="ja">
       <body>
         <Providers>
-          {children}
+          <Header />
+          <DefaultWrapper>
+            {children}
+          </DefaultWrapper>
         </Providers>
       </body>
     </html>
