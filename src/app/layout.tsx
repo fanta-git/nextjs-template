@@ -11,7 +11,7 @@ export default function RootLayout(props: Props) {
 
   return (
     <html lang="ja">
-      <body>
+      <body style={{ width: "100vw" }}>
         <Providers>
           <Header />
           <DefaultWrapper>
